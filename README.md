@@ -36,62 +36,28 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
-from http.server import HTTPServer,BaseHTTPRequestHandler
-
-content='''
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>saveetha engineering collage</title>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhan</title>
 </head>
-<body >
-    <style>
-        table,th,td{    
-        border : 2px solid yellow;
-        }
-        body{
-            background-color: black;
-            color: white;
-        }
-    </style>
-<center>
-   <table>
-    <tr>
-        <th>APPLICATION LAYER</th>
-        <TH>TRANSPORT LAYER</TH>
-        <TH>INTERNET LAYER</TH>
-        <TH>NETWORK ACCESS LAYER</TH>
-    </tr>
-    <tr>
-        <td>HTTP <br> FTP<br> DNS<br> TELNET <br></td>
-        <td>TCP<br>
-            UDP</td>
-        <TD>IPv4<br>IPv6</TD>
-        <td>ETHERNET</td>
-    </tr>
-   </table>
-</center>
+<body>
+    <h1>fundamentals of web application</h1>
+    <h2>fundamentals of web application</h2>
+    <h3>fundamentals of web application</h3>
+    <h4>fundamentals of web application</h4>
+    <h5>fundamentals of web application</h5>
+    <h6>fundamentals of web application</h6>
+
+    
 </body>
-'''
-
-class MyServer(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("Get request received...")
-        self.send_response(200) 
-        self.send_header("content-type", "text/html")       
-        self.end_headers()
-        self.wfile.write(content.encode())
-
-print("This is my webserver") 
-server_address =('',8000)
-httpd = HTTPServer(server_address,MyServer)
-httpd.serve_forever()
-
+</html>
 
 ## OUTPUT:
-![WhatsApp Image 2025-04-21 at 21 26 51_912651c6](https://github.com/user-attachments/assets/dc03f424-3e74-4c4a-8fb1-978ca2048bcb)
-![WhatsApp Image 2025-04-21 at 21 28 35_a14e74a2](https://github.com/user-attachments/assets/44382225-dcc7-45b2-9ee4-b4a46e2f1771)
-
-
+![Screenshot 2025-04-25 164627](https://github.com/user-attachments/assets/bdb3c9df-8da6-44d4-b1ef-86d27e442558)
+![Screenshot 2025-04-25 164653](https://github.com/user-attachments/assets/d85486dc-f6e0-426f-8eb0-d4a70c11976c)
 
 
 ## RESULT:
